@@ -1,0 +1,22 @@
+canvas { 
+    margin:20px;
+    border: 20px solid #05739f;
+    background-color: rgba(0, 0, 0, 0.650);
+    border-radius: 6rem;
+    padding: 2rem;
+}
+
+body{ /* FONDO*/
+    height:10px;
+    padding:0;
+    margin: 20px;
+    background-color: rgb(132, 0, 193);
+    background-image: url(../img/naturaleza_rio.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+    font-family: "Fredoka One", cursive;
+    background-color: var(--bg);
+}
+

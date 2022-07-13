@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/titulo.css">
+        <link rel="stylesheet" href="css/estilos_boton.css">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+        <!-- JS dependencies -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap 4 dependency -->
+        <script src="https://unpkg.com/@popperjs/core@2.11.5/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- bootbox code -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.5.2/bootbox.min.js"></script>
+        <script src="https://github.com/makeusabrew/bootbox/releases/download/v5.5.2/bootbox.locales.min.js"></script>
+        
+        <script type="module">
+            import {insertar_inicio} from './lib/index.js';
+            import {insertar_final} from './lib/index.js';
+            import {insertar_antes_X} from './lib/index.js';
+            import {insertar_despues_X} from './lib/index.js';
+            ///////////////////////////////////////////////////////
+            import {eliminar_inicio} from './lib/index.js';
+            import {eliminar_final} from './lib/index.js';
+            import {eliminar_X} from './lib/index.js';
+            import {eliminar_antes_X} from './lib/index.js';
+            import {eliminar_despues_X} from './lib/index.js';
+            ////////////////////////////////////////////////////////
+            window.insertar_inicio=insertar_inicio;
+            window.insertar_final=insertar_final;
+            window.insertar_antes_X=insertar_antes_X;
+            window.insertar_despues_X=insertar_despues_X;
+            ////////////////////////////////////////////////////////
+            window.eliminar_inicio=eliminar_inicio;
+            window.eliminar_final=eliminar_final;
+            window.eliminar_X=eliminar_X;
+            window.eliminar_antes_X=eliminar_antes_X;
+            window.eliminar_despues_X=eliminar_despues_X;
+        </script>
+
+        <link rel="stylesheet" href="css/botones/boton1.css">
+        <link rel="stylesheet" href="css/botones/boton2.css">
+        <link rel="stylesheet" href="css/botones/boton3.css">
+        <link rel="stylesheet" href="css/botones/boton4.css">
+        <link rel="stylesheet" href="css/botones/boton5.css">
+        <link rel="stylesheet" href="css/botones/boton6.css">
+        <link rel="stylesheet" href="css/botones/boton7.css">
+        <link rel="stylesheet" href="css/botones/boton8.css">
+        <link rel="stylesheet" href="css/botones/boton9.css">
+        <link rel="stylesheet" href="css/botones/boton10.css">
+    </head>
+
+    <body>
+        <main class="degradado-borde">
+            <div class="caja">
+                <h1="degradado-texto">LISTA SIMPLEMENTE LIGADA</h1>
+            </div>
+        </main>
+        
+        <div id="salida"></div>
+
+        
+        <div class="contenedor">
+            <div class="contenedor-botones">
+                <button class="boton1" onclick="insertar_inicio()"><span>insertar inicio</span></button>
+                <button class="boton2" onclick="insertar_final()"><span>insertar final</span></button>
+                <button class="boton3" onclick="insertar_antes_X()"><span>insertar antes de X</span></button>
+                <button class="boton4" onclick="insertar_despues_X()"><span>insertar despues de X</span></button>
+                <center><canvas id="tutorial" width="535" height="250"></canvas></center>
+                <button class="boton10" onclick="insertar_final()"><span>insertar X</span></button>
+                <button class="boton5" onclick="eliminar_inicio()"><span>eliminar inicio</span></button>
+                <button class="boton6" onclick="eliminar_final()"><span>eliminar final</span></button>
+                <button class="boton7" onclick="eliminar_antes_X()"><span>eliminar antes de X</span></button>
+                <button class="boton8" onclick="eliminar_despues_X()"><span>eliminar despues de X</span></button>
+                <button class="boton9" onclick="eliminar_X()"><span>eliminar X</span></button>
+            </div>
+        </div>
+    </body>
+</html>
+
